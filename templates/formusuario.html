@@ -1,0 +1,17 @@
+{% extends "paginabase.html" %}
+
+{% block title %} Registro de Usuarios {%endblock%}
+
+{% block content %} 
+    <form actions="" method="post">
+        <label for="nombre">Nombres: </label>
+        <input type="text" id="nombres" name="nombres" /><br>
+        <label for="apellidos">Apellidos: </label>
+        <input type="text" id="apellidos" name="apellidos" /><br>
+        <label for="carnet">Carnet: </label>
+        <input type="text" id="carnet" name="carnet" /><br>
+        <label for="cedu">Centro Educativo: </label>
+        <input type="text" id="cedu" name="cedu" /><br>
+        <input type="submit" id="enviar" name="enviar" value="Agregar Usuario">
+    </form>
+{% endblock %}
